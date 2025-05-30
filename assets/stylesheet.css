@@ -5,9 +5,11 @@ body {
 	font-size: 1.25rem;
 	line-height: 2;
 	margin: 0px;
+	overflow-x: hidden;
 }
 
 #header {
+	align:center;
 	margin-top: 0px;
 	margin-left: 0px;
 	margin-bottom:0px;
@@ -20,7 +22,7 @@ body {
 #footer {
 	background-color: #000000;
 	margin-bottom: 0px;
-	margin-left: opx;
+	margin-left: 0px;
 	margin-right: 0px;
 	padding-left: 2%;
 	width: 98%;
@@ -45,18 +47,6 @@ body {
 	padding-left: 10%;
 }
 
-.left-stuff {
-	float: left;
-	padding-left: 10%;
-	padding-right: 2%
-}
-
-.right-stuff {
-	float: right;
-	padding-right: 10%;
-	padding-left: 2%
-}
-
 .caption {
 	font-size: 0.75rem;
 	margin-top: 1.86%;
@@ -74,4 +64,23 @@ body {
 	font-size: 4rem;
 	margin-left: 10%;
 	line-height: 1.25;
+}
+
+.container {
+	display: flex;
+	width: 90%;
+	justify-content: space-evenly;
+	padding: 5%;
+	gap: 5%;
+	flex-wrap: wrap;
+}
+
+.pic {
+	flex: 0 0 380px;
+	align-content: center;
+}
+
+.intro {
+	flex: 1 1 0;
+	min-width: 420px;
 }
